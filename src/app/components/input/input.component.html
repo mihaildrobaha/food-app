@@ -1,0 +1,29 @@
+<div class="wrapper">
+
+  <form class="form" [formGroup]="form" (ngSubmit)="submit()">
+
+    <div class="input">
+
+      <mat-form-field class="form-field" appearance="outline" >
+        <mat-label>Calories (e.g. 2000)</mat-label>
+        <input (keyup.enter)="getDailyMealPlan()" matInput type="text" formControlName="input">
+        <button *ngIf="form.value.input" matSuffix mat-icon-button aria-label="Clear" (click)="form.reset()">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+
+      <div class="validation" *ngIf="form.get('input')!.invalid && form.get('input')!.touched">
+        <small *ngIf="!form.value.input">Field cannot be empty.</small>
+        <small *ngIf="(form.value.input.length < 3 && form.value.input.length > 0) || form.value.input.length > 4">Enter 3 to 4 numbers</small>
+      </div>
+
+      <button class="btn" [disabled]="form.invalid" type="submit"
+        (click)="getDailyMealPlan()"
+        mat-raised-button color="primary">Get daily meal plan
+      </button>
+
+    </div>
+
+  </form>
+
+</div>

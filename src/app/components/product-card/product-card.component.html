@@ -1,0 +1,20 @@
+<div class="card">
+
+  <mat-card *ngFor="let product of products" class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{product.title}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="product.image" alt="img">
+    <mat-card-content>
+      <p>Preparation time: {{product.readyInMinutes}}</p>
+      <p>Number of servings: {{product.servings}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <a [href]="product.sourceUrl" target="_blank">
+        <button mat-raised-button color="primary">Go to recipe</button>
+      </a>
+    </mat-card-actions>
+  </mat-card>  
+
+</div>
+

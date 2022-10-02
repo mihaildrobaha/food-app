@@ -1,0 +1,35 @@
+.daily-meal-plan{
+  width: 100%;
+  h1{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+  }
+  .meal-plan-list{
+    margin-top: 40px;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    color: #fff;
+    font-size: 18px;
+  }
+  li{
+    border: 1px solid rgb(195, 195, 195);
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(41, 41, 41);
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .meal-plan-list{
+    flex-direction: column;
+    width: 200px;
+    margin: 0 auto;
+  }
+  li{
+    margin-bottom: 10px;
+  }
+}

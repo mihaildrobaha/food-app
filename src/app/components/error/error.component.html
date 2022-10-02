@@ -1,0 +1,22 @@
+<div
+*ngIf="error"
+ class="error-wrapper">
+
+  <div class="error-header">
+    <h2>Error!</h2>
+  </div>
+
+  <div class="error-description">
+    <p>{{error}}</p>
+  </div>
+
+  <div class="btn">
+    <button
+      (click)="hideError()"
+      mat-raised-button color="warn"
+      >
+      HIDE ERROR
+    </button>
+  </div>
+
+</div>
