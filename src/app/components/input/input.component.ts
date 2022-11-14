@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, MinLengthValidator, Validators } from '@angular/forms';
-import { DataProductService } from 'src/app/services/data-product.service';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { DataProductService } from '../../services/data-product.service';
 
 @Component({
   selector: 'app-input',

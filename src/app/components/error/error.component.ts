@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataProductService } from 'src/app/services/data-product.service';
+import { DataProductService } from '../../services/data-product.service';
 
 @Component({
   selector: 'app-error',

@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { INutrients } from 'src/app/interfaces/nutriens.interface';
-import { DataProductService } from 'src/app/services/data-product.service';
+import { INutrients } from '../../interfaces/nutriens.interface';
+import { DataProductService } from '../../services/data-product.service';
 
 @Component({
   selector: 'app-nutrients',

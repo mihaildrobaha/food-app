@@ -74,7 +74,6 @@ export class DataProductService {
               })
               if (this.mealsDataId.length === prod.length) {
                 this.products$.next(prod)
-                console.log('id :', this.mealsDataId.length, 'product :', prod.length)
                 prod = []
               }
               return prod
@@ -89,7 +88,6 @@ export class DataProductService {
         )
     }
     )
-    console.log(prod)
   }
 
 }

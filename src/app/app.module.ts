@@ -15,6 +15,7 @@ import { InputComponent } from './components/input/input.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ErrorComponent } from './components/error/error.component';
 import { NutrientsComponent } from './components/nutrients/nutrients.component';
+import { DataProductService } from './services/data-product.service';
 
 
 
@@ -40,7 +41,7 @@ import { NutrientsComponent } from './components/nutrients/nutrients.component';
     ReactiveFormsModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [DataProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
